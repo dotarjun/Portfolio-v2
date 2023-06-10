@@ -1,80 +1,80 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
 
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 // Component Imports
-import CallToAction from '../components/CallToAction.astro';
-import Grid from '../components/Grid.astro';
-import Hero from '../components/Hero.astro';
-import Icon from '../components/Icon.astro';
-import Pill from '../components/Pill.astro';
-import PortfolioPreview from '../components/PortfolioPreview.astro';
+import CallToAction from "../components/CallToAction.astro";
+import Grid from "../components/Grid.astro";
+import Hero from "../components/Hero.astro";
+import Icon from "../components/Icon.astro";
+import Pill from "../components/Pill.astro";
+import PortfolioPreview from "../components/PortfolioPreview.astro";
 
 // Page section components
-import ContactCTA from '../components/ContactCTA.astro';
-import Skills from '../components/Skills.astro';
+import ContactCTA from "../components/ContactCTA.astro";
+import Skills from "../components/Skills.astro";
 
 // Content Fetching: List four most recent work projects
-const projects = (await getCollection('work'))
+const projects = (await getCollection("work"))
 	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 	.slice(0, 4);
 
 const skills = [
 	{
-		key: 'html',
-		name: 'HTML',
+		key: "html",
+		name: "HTML",
 	},
 	{
-		key: 'css',
-		name: 'CSS',
+		key: "css",
+		name: "CSS",
 	},
 	{
-		key: 'js',
-		name: 'JavaScript',
+		key: "js",
+		name: "JavaScript",
 	},
 	{
-		key: 'react',
-		name: 'React',
+		key: "react",
+		name: "React",
 	},
 	{
-		key: 'next',
-		name: 'Next.js',
+		key: "next",
+		name: "Next.js",
 	},
 	{
-		key: 'astro',
-		name: 'Astro',
+		key: "astro",
+		name: "Astro",
 	},
 	{
-		key: 'tailwind',
-		name: 'Tailwind CSS',
+		key: "tailwind",
+		name: "Tailwind CSS",
 	},
 	{
-		key: 'mongodb',
-		name: 'MongoDB',
+		key: "mongodb",
+		name: "MongoDB",
 	},
 	{
-		key: 'express',
-		name: 'Express',
+		key: "express",
+		name: "Express",
 	},
 	{
-		key: 'nodejs',
-		name: 'Node.js',
+		key: "nodejs",
+		name: "Node.js",
 	},
 	{
-		key: 'mysql',
-		name: 'MySQL',
+		key: "mysql",
+		name: "MySQL",
 	},
 	{
-		key: 'jest',
-		name: 'Jest',
+		key: "jest",
+		name: "Jest",
 	},
 	{
-		key: 'figma',
-		name: 'Figma',
+		key: "figma",
+		name: "Figma",
 	},
-]
+];
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -87,12 +87,17 @@ const skills = [
 				<Hero
 					title="Hello, my name is Arjun Singh"
 					tagline="I am a Creative Developer empowering Businesses With Code And Striking Visual Design."
-					align="start"
-				>
+					align="start">
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Designer</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill>
+							<Icon icon="code" size="1.33em" /> Developer
+						</Pill>
+						<Pill>
+							<Icon icon="palette" size="1.33em" /> Designer
+						</Pill>
+						<Pill>
+							<Icon icon="pencil-line" size="1.33em" /> Writer
+						</Pill>
 					</div>
 				</Hero>
 
@@ -111,7 +116,10 @@ const skills = [
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<p>
+						Take a look below at some of my featured work for
+						clients from the past few years.
+					</p>
 				</header>
 
 				<div class="gallery">
@@ -138,14 +146,14 @@ const skills = [
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Skills</h3>
 					<p>
-						These are the skills I possess, helping me to create beautiful and functional websites
+						These are the skills I possess, helping me to create
+						beautiful and functional websites
 					</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-
 							// q: rewrite the code below so it works with the skills array above
 							// hint: use the .map() method
 
@@ -223,7 +231,7 @@ const skills = [
 	.with-background::before {
 		--hero-bg: var(--bg-image-subtle-2);
 
-		content: '';
+		content: "";
 		position: absolute;
 		pointer-events: none;
 		left: 50%;
@@ -231,8 +239,9 @@ const skills = [
 		aspect-ratio: calc(2.25 / var(--bg-scale));
 		top: 0;
 		transform: translateY(-75%) translateX(-50%);
-		background: url('/assets/backgrounds/noise.png') top center/220px repeat,
-			var(--hero-bg) center center / var(--bg-gradient-size) no-repeat, var(--gray-999);
+		background: url("/assets/backgrounds/noise.png") top center/220px repeat,
+			var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
+			var(--gray-999);
 		background-blend-mode: overlay, normal, normal, normal;
 		mix-blend-mode: var(--bg-blend-mode);
 		z-index: -1;
@@ -257,12 +266,12 @@ const skills = [
 	@media (min-width: 50em) {
 		.section {
 			grid-template-columns: repeat(4, 1fr);
-			grid-template-areas: 'header header header header' 'gallery gallery gallery gallery';
+			grid-template-areas: "header header header header" "gallery gallery gallery gallery";
 			gap: 5rem;
 		}
 
 		.section.with-cta {
-			grid-template-areas: 'header header header cta' 'gallery gallery gallery gallery';
+			grid-template-areas: "header header header cta" "gallery gallery gallery gallery";
 		}
 
 		.section-header {
@@ -291,7 +300,7 @@ const skills = [
 	/* ====================================================== */
 
 	.skill-card {
-		 display: flex;
+		display: flex;
 		/*height: 7rem;
 		text-align: center;
 		border: 1px solid var(--gray-800);
@@ -314,7 +323,6 @@ const skills = [
 		color: var(--gray-300);
 		background: var(--gradient-subtle);
 		box-shadow: var(--shadow-sm);
-
 	}
 
 	@media (min-width: 50em) {
