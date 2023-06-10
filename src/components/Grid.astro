@@ -17,12 +17,16 @@ const { variant } = Astro.props;
 		gap: 1rem;
 		list-style: none;
 		padding: 0;
+		/* q: make it veritcally and horizontally centered */
+		justify-content: center;
+		align-items: center;
 	}
 
 	.grid.small {
 		/* grid-template-columns: 1fr 1fr; */
 		/* q: how to make this auto add columns */
 		grid-auto-columns: 1fr;
+		grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
 		gap: 1.5rem;
 	}
 
