@@ -30,8 +30,9 @@ import Hero from "../components/Hero.astro";
 						path of exploration and discovery, fueling my desire to
 						understand and create within the digital realm. I have
 						honed my skills in various areas of computer science,
-						from web development to UI/UX Design, and I am always
-						eager to take on new challenges and expand my knowledge.
+						from <mark>Web Development</mark> to
+						<mark>UI/UX Design</mark>, and I am always eager to take
+						on new challenges and expand my knowledge.
 					</p>
 					<br />
 					<p>
@@ -40,9 +41,8 @@ import Hero from "../components/Hero.astro";
 						<a
 							href="http://blog.arjunsingh.tech/"
 							target="_blank"
-							rel="noopener noreferrer"
-							class="underline">
-							<strong>blog posts</strong>
+							rel="noopener noreferrer">
+							<strong>Blog posts</strong>
 						</a>
 						, which I publish every Monday and Friday. Writing allows
 						me to articulate my ideas and communicate with others, fostering
@@ -64,7 +64,12 @@ import Hero from "../components/Hero.astro";
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<p>
+						I have done my bachelor's in
+						<mark>Computer Science</mark> from the Delhi University.
+						I learnt a lot about the fundamentals of computer science
+						and programming during my time there.
+					</p>
 				</div>
 			</section>
 		</main>
@@ -91,6 +96,10 @@ import Hero from "../components/Hero.astro";
 		flex-direction: column;
 		gap: 0.5rem;
 		color: var(--gray-200);
+	}
+	mark {
+		background-color: rgba(var(--link-color), 0.5);
+		color: var(--gray-0);
 	}
 
 	.section-title {
