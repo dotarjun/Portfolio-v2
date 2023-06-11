@@ -1,31 +1,48 @@
-# Astro Starter Kit: Portfolio
+# Portfolio-v2
 
-```
-npm create astro@latest -- --template portfolio
-```
+This is the second version of my portfolio project, designed to showcase my work, skills, and accomplishments.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/portfolio/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![portfolio](https://user-images.githubusercontent.com/357379/210779178-a98f0fb7-6b1a-4068-894c-8e1403e26654.jpg)
+![image](https://github.com/dotarjun/Portfolio-v2/assets/71163609/cdda5630-e3a5-45d1-8086-851b25b471b9)
 
 
-## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+## Description
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+The Portfolio-v2 project serves as a digital representation of my professional portfolio. It includes a collection of my projects, resume, and other relevant information to provide an overview of my skills and experience.
 
-## 👀 Want to learn more?
+## Features
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Responsive design: The portfolio is built to be fully responsive, ensuring a seamless user experience across various devices and screen sizes.
+
+- Project showcase: I have included a selection of my best projects, accompanied by descriptions, screenshots, and links to live demos or repositories.
+
+- Skills and expertise: The portfolio highlights my areas of expertise and skills, giving visitors an understanding of the technologies I work with.
+
+## Technologies Used
+
+- React: A JavaScript library for building user interfaces.
+- Astro JS: A static site builder that allows mixing JavaScript and static HTML for creating performant and dynamic websites.
+- Figma: A cloud-based design and prototyping tool used for creating visual designs and user interfaces.
+
+## Getting Started
+
+To view the portfolio locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/dotarjun/Portfolio-v2.git`
+2. Install dependencies by running `npm install`.
+3. Start the development server by running `npm start`.
+4. Open your preferred web browser and visit `http://localhost:3000`.
+
+## Contributing
+
+Contributions to the project are welcome. If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+For any inquiries or further information, please reach out to me at [insert your contact email].
+
+Thank you for visiting my portfolio! I hope you find it informative and engaging.
