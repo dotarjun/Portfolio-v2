@@ -23,8 +23,8 @@ import Experience from "../components/Experience.astro";
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Arjun Singh"
-					tagline="I am a Creative Developer empowering Businesses With Code And Striking Visual Design."
+					title="Hi, I'm Arjun"
+					tagline="I am a Creative Developer shipping Beautiful and Performant websites on a timely fashion"
 					align="start">
 					<div class="roles">
 						<Pill>
@@ -80,6 +80,15 @@ import Experience from "../components/Experience.astro";
 		object-position: top;
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-md);
+	}
+
+	@media (max-width: 50em) {
+		.roles {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.5rem;
+			justify-content: center;
+		}
 	}
 
 	@media (min-width: 50em) {
