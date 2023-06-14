@@ -20,60 +20,7 @@ const projects = (await getCollection("work"))
 	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 	.slice(0, 4);
 
-const skills = [
-	{
-		key: "html",
-		name: "HTML",
-	},
-	{
-		key: "css",
-		name: "CSS",
-	},
-	{
-		key: "js",
-		name: "JavaScript",
-	},
-	{
-		key: "react",
-		name: "React",
-	},
-	{
-		key: "next",
-		name: "Next.js",
-	},
-	{
-		key: "astro",
-		name: "Astro",
-	},
-	{
-		key: "tailwind",
-		name: "Tailwind CSS",
-	},
-	{
-		key: "mongodb",
-		name: "MongoDB",
-	},
-	{
-		key: "express",
-		name: "Express",
-	},
-	{
-		key: "nodejs",
-		name: "Node.js",
-	},
-	{
-		key: "mysql",
-		name: "MySQL",
-	},
-	{
-		key: "jest",
-		name: "Jest",
-	},
-	{
-		key: "figma",
-		name: "Figma",
-	},
-];
+
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -141,34 +88,6 @@ const skills = [
 				</div>
 			</section>
 
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Skills</h3>
-					<p>
-						These are the skills I possess, helping me to create
-						beautiful and functional websites
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							// q: rewrite the code below so it works with the skills array above
-							// hint: use the .map() method
-
-							skills.map((skill) => (
-								<li class="skill-card">
-									<img
-										alt={`${skill.name} Logo`}
-										src={`https://skillicons.dev/icons?i=${skill.key}`}
-									/>
-									<p>{skill.name}</p>
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-			</section>
 		</main>
 
 		<ContactCTA />
