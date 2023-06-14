@@ -1,0 +1,177 @@
+---
+import Grid from "../components/Grid.astro";
+
+const skills = [
+    {
+        key: "html",
+        name: "HTML",
+    },
+    {
+        key: "css",
+        name: "CSS",
+    },
+    {
+        key: "js",
+        name: "JavaScript",
+    },
+    {
+        key: "react",
+        name: "React",
+    },
+    {
+        key: "next",
+        name: "Next.js",
+    },
+    {
+        key: "astro",
+        name: "Astro",
+    },
+    {
+        key: "tailwind",
+        name: "Tailwind CSS",
+    },
+    {
+        key: "mongodb",
+        name: "MongoDB",
+    },
+    {
+        key: "express",
+        name: "Express",
+    },
+    {
+        key: "nodejs",
+        name: "Node.js",
+    },
+    {
+        key: "mysql",
+        name: "MySQL",
+    },
+    {
+        key: "jest",
+        name: "Jest",
+    },
+    {
+        key: "figma",
+        name: "Figma",
+    },
+];
+---
+
+<section class="section with-background bg-variant">
+    <header class="section-header stack gap-2 lg:gap-4">
+        <h3>Skills</h3>
+        <p>
+            These are the skills I possess, helping me to create beautiful and
+            functional websites
+        </p>
+    </header>
+
+    <div class="gallery">
+        <Grid variant="small">
+            {
+                skills.map((skill) => (
+                    <li class="skill-card">
+                        <img
+                            alt={`${skill.name} Logo`}
+                            src={`https://skillicons.dev/icons?i=${skill.key}`}
+                        />
+                        <p>{skill.name}</p>
+                    </li>
+                ))
+            }
+        </Grid>
+    </div>
+</section>
+
+<style>
+    .section {
+        display: grid;
+        gap: 2rem;
+    }
+
+    .with-background {
+        position: relative;
+    }
+
+    .with-background::before {
+        --hero-bg: var(--bg-image-subtle-2);
+
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        left: 50%;
+        width: 100vw;
+        aspect-ratio: calc(2.25 / var(--bg-scale));
+        top: 0;
+        transform: translateY(-75%) translateX(-50%);
+        background: url("/assets/backgrounds/noise.png") top center/220px repeat,
+            var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
+            var(--gray-999);
+        background-blend-mode: overlay, normal, normal, normal;
+        mix-blend-mode: var(--bg-blend-mode);
+        z-index: -1;
+    }
+
+    .with-background.bg-variant::before {
+        --hero-bg: var(--bg-image-subtle-1);
+    }
+
+    .section-header {
+        justify-self: center;
+        text-align: center;
+        max-width: 50ch;
+        font-size: var(--text-md);
+        color: var(--gray-300);
+    }
+
+    .section-header h3 {
+        font-size: var(--text-2xl);
+    }
+
+    @media (min-width: 50em) {
+        .section {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: "header header header header" "gallery gallery gallery gallery";
+            gap: 5rem;
+        }
+
+        .section-header {
+            grid-area: header;
+            font-size: var(--text-lg);
+        }
+
+        .section-header h3 {
+            font-size: var(--text-4xl);
+        }
+
+        .gallery {
+            grid-area: gallery;
+        }
+    }
+
+    .skill-card {
+        display: flex;
+        align-items: center;
+        color: var(--gray-300);
+        font-size: var(--text-sm);
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .skill-card img {
+        width: 9rem;
+        border: 1px solid var(--gray-800);
+        border-radius: 1.5rem;
+        padding: 0.5rem;
+        color: var(--gray-300);
+        background: var(--gradient-subtle);
+        box-shadow: var(--shadow-sm);
+    }
+
+    @media (min-width: 50em) {
+        .skill-card {
+            border-radius: 1.5rem;
+            height: 9.5rem;
+        }
+    }
+</style>
