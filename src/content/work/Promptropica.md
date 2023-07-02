@@ -23,4 +23,4 @@ tags:
 ### Description
 Promptropica is a feature-rich Full Stack Application that empowers users to unleash their creativity. It is a powerful AI prompt sharing tool that allows users to **Create, Read, Update, and Delete** AI prompts effortlessly. 
 
-Powered by Next.js 13.4 and equipped with Tailwind CSS for sleek and responsive styling, Promptropica offers a seamless user experience. With Next Auth handling authentication via Google, and MongoDB and Mongoose as the robust database solution.
+Powered by **Next.js 13.4** and equipped with **Tailwind CSS** for sleek and responsive styling, Promptropica offers a seamless user experience. With **Next Auth** handling authentication via *Google*, and **MongoDB** and **Mongoose** as the robust database solution.
