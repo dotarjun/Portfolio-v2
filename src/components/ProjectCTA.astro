@@ -7,11 +7,11 @@ const entry = Astro.props;
 
 <aside>
     <CallToAction href={entry.url}>
-        Live Preview
+        Live
         <Icon icon="globe" size="1.2em" />
     </CallToAction>
     <CallToAction href={entry.repo}>
-        GitHub Repo
+        Repo
         <Icon icon="github-logo" size="1.2em" />
     </CallToAction>
 </aside>
@@ -36,7 +36,7 @@ const entry = Astro.props;
         aside {
             flex-direction: row-reverse;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
         h2 {
