@@ -1,13 +1,14 @@
 ---
 title: Promptropica
 publishDate: 2023-07-02 11:30:00
-img: /assets/stock-2.jpg
-img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
+img: /assets/work/promptropica-preview.png
+img_alt: Promptropica preview
 description: |
-  AI prompt sharing tool that allows users to Create, Read, Update, and Delete AI prompts effortlessly
+  AI prompt sharing tool with CRUD functionality
 tags:
-  - AI
-  - CRUD
+  - Next.js
+  - Auth
+  - MongoDB
 ---
 
 Welcome to the exciting world of Promptropica, a powerful AI prompt sharing tool that allows users to Create, Read, Update, and Delete AI prompts effortlessly. 
