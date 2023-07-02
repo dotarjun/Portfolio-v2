@@ -7,6 +7,7 @@ import ContactCTA from "../../components/ContactCTA.astro";
 import Hero from "../../components/Hero.astro";
 import Icon from "../../components/Icon.astro";
 import Pill from "../../components/Pill.astro";
+import ProjectCTA from "../../components/ProjectCTA.astro";
 
 interface Props {
 	entry: CollectionEntry<"work">;
@@ -55,6 +56,12 @@ const { Content } = await entry.render();
 							/>
 						)
 					}
+					<div>
+						<ProjectCTA />
+						<!-- TODO: Add title={entry.data.title} -->
+						<!-- TODO: Add url={entry.data.url} -->
+						<!-- TODO: Add repo={entry.data.repo} -->
+					</div>
 					<div class="content">
 						<Content />
 					</div>
