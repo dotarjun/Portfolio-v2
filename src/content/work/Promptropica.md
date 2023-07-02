@@ -1,6 +1,8 @@
 ---
 title: Promptropica
 publishDate: 2023-07-02 11:30:00
+url: https://promptropica.arjunsingh.tech/
+repo: https://github.com/dotarjun/promptropica
 img: /assets/work/promptropica-preview.png
 img_alt: Promptropica preview
 description: |
