@@ -57,7 +57,10 @@ const { Content } = await entry.render();
 						)
 					}
 					<div>
-						<ProjectCTA url={entry.data.url} />
+						<ProjectCTA
+							url={entry.data.url}
+							repo={entry.data.repo}
+						/>
 					</div>
 					<div class="content">
 						<Content />
