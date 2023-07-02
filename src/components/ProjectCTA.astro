@@ -1,10 +1,12 @@
 ---
 import CallToAction from "./CallToAction.astro";
 import Icon from "./Icon.astro";
+
+const entry = Astro.props;
 ---
 
 <aside>
-    <CallToAction href="mailto:arjun@arjunsingh.tech">
+    <CallToAction href={entry.data.url}>
         Live Preview
         <Icon icon="globe" size="1.2em" />
     </CallToAction>
