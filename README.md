@@ -2,7 +2,7 @@
 
 This is the second version of my portfolio project, designed to showcase my work, skills, and accomplishments.
 
-![image](https://github.com/dotarjun/Portfolio-v2/assets/71163609/cdda5630-e3a5-45d1-8086-851b25b471b9)
+![image](https://github.com/dotarjun/Portfolio-v2/assets/71163609/d4a9d37e-6d06-4030-ab40-0b9f0a56d03b)
 
 ## Description
 
