@@ -12,7 +12,9 @@ tags:
   - Auth
   - MongoDB
 ---
+
 ## Tech Stack
+
 - **Next.js**
 - **Tailwind CSS**
 - **MongoDB**
@@ -21,6 +23,15 @@ tags:
 - **Google OAuth**
 
 ### Description
-Promptropica is a feature-rich Full Stack Application that empowers users to unleash their creativity. It is a powerful AI prompt sharing tool that allows users to **Create, Read, Update, and Delete** AI prompts effortlessly. 
 
-Powered by **Next.js 13.4** and equipped with **Tailwind CSS** for sleek and responsive styling, Promptropica offers a seamless user experience. With **Next Auth** handling authentication via *Google*, and **MongoDB** and **Mongoose** as the robust database solution.
+Promptropica is a feature-rich Full Stack Application that empowers users to unleash their creativity. It is a powerful AI prompt sharing tool that allows users to **Create, Read, Update, and Delete** AI prompts effortlessly.
+
+Powered by **[Next.js 13.4](https://nextjs.org/)** and equipped with **[Tailwind CSS](https://tailwindcss.com)** for sleek and responsive styling, Promptropica offers a seamless user experience. With **[Next Auth](https://next-auth.js.org/)** handling authentication via _Google_, and **[MongoDB](https://www.mongodb.com/)** and **[Mongoose](https://mongoosejs.com/)** as the robust database solution.
+
+### Features
+
+- **CRUD:** The project supports full CRUD functionality, allowing users to create, read, update, and delete prompts.
+- **Google OAuth:** The project supports Google OAuth for authentication ensuring a secure and seamless user experience.
+- **Responsive design:** The portfolio is built to be fully responsive, ensuring a seamless user experience across various devices and screen sizes.
+- **Search:** The project supports search functionality, allowing users to search for prompts by title, tag or username.
+- **User Profiles:** The project supports user profiles, allowing users to view their own profile and other users' profiles.
