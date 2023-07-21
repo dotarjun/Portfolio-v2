@@ -10,58 +10,72 @@ const skills = [
   {
     key: "nextjs",
     name: "Next.js",
+    link: "https://nextjs.org/",
   },
   {
     key: "typescript",
     name: "TypeScript",
+    link: "https://www.typescriptlang.org/",
   },
   {
     key: "tailwindcss",
     name: "Tailwind CSS",
+    link: "https://tailwindcss.com/",
   },
   {
     key: "prisma",
     name: "Prisma",
+    link: "https://www.prisma.io/",
   },
   {
     key: "graphql",
     name: "GraphQL",
+    link: "https://graphql.org/",
   },
   {
     key: "nodejs",
     name: "Node.js",
+    link: "https://nodejs.org/en/",
   },
   {
     key: "express",
     name: "Express",
+    link: "https://expressjs.com/",
   },
   {
     key: "mongodb",
     name: "MongoDB",
+    link: "https://www.mongodb.com/",
   },
   {
     key: "mysql",
     name: "MySQL",
+    link: "https://www.mysql.com/",
   },
   {
     key: "html",
     name: "HTML5",
+    link: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
   },
   {
     key: "css",
     name: "CSS3",
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
     key: "javascript",
     name: "JavaScript",
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
     key: "jest",
     name: "Jest",
+    link: "https://jestjs.io/",
   },
   {
     key: "figma",
     name: "Figma",
+    link: "https://www.figma.com/",
   },
 ];
 ---
@@ -80,11 +94,13 @@ const skills = [
       {
         skills.map((skill) => (
           <li class="skill-card">
-            <img
-              alt={`${skill.name} Logo`}
-              src={`https://skillicons.dev/icons?i=${skill.key}`}
-            />
-            <p>{skill.name}</p>
+            <a href={skill.link}>
+              <img
+                alt={`${skill.name} Logo`}
+                src={`https://skillicons.dev/icons?i=${skill.key}`}
+              />
+              <p>{skill.name}</p>
+            </a>
           </li>
         ))
       }
