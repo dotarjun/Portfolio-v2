@@ -4,8 +4,6 @@ This is the second version of my portfolio project, designed to showcase my work
 
 ![image](https://github.com/dotarjun/Portfolio-v2/assets/71163609/cdda5630-e3a5-45d1-8086-851b25b471b9)
 
-
-
 ## Description
 
 The Portfolio-v2 project serves as a digital representation of my professional portfolio. It includes a collection of my projects, resume, and other relevant information to provide an overview of my skills and experience.
@@ -22,6 +20,9 @@ The Portfolio-v2 project serves as a digital representation of my professional p
 
 - React: A JavaScript library for building user interfaces.
 - Astro JS: A static site builder that allows mixing JavaScript and static HTML for creating performant and dynamic websites.
+- Tailwind CSS: A utility-first CSS framework for rapidly building custom user interfaces.
+- Vercel: A cloud platform for static sites and serverless functions.
+- GitHub: A code hosting platform for version control and collaboration.
 - Figma: A cloud-based design and prototyping tool used for creating visual designs and user interfaces.
 
 ## Getting Started
