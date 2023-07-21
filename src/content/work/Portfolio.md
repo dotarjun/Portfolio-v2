@@ -2,7 +2,7 @@
 title: Portfolio
 description: |
   My Portfolio Website
-publishDate: 2023-07-02 11:30:00
+publishDate: 2023-07-21 11:30:00
 url: https://www.arjunsingh.tech/
 repo: https://github.com/dotarjun/Portfolio-v2/
 img: /assets/work/portfolio.png
