@@ -1,7 +1,7 @@
 ---
-title: Portfolio
+title: Ratatouille Restaurant
 description: |
-  My Portfolio Website
+  A simple restaurant page built using HTML, CSS and JavaScript
 publishDate: 2022-10-21 11:30:00
 url: https://ratatouille.arjunsingh.tech/
 repo: https://github.com/dotarjun/RestaurantPage-JS/
