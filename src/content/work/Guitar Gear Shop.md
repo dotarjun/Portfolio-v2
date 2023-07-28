@@ -4,7 +4,7 @@ description: A full featured ecommerce store for guitar gear
 publishDate: 2023-07-28
 url: https://www.guitargear.shop/
 repo: https://github.com/dotarjun/ecommerce-store
-img: /assets/guitar-gear-shop.png
+img: /assets/work/guitar-gear-shop.png
 img_alt: Guitar Gear Shop preview
 tags:
   - Next.js

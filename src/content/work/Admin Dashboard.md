@@ -4,7 +4,7 @@ description: Full featured Admin Dashboard for managing an ecommerce site
 publishDate: 2023-07-25
 url: https://dashboard.guitargear.shop/
 repo: https://github.com/dotarjun/Ecommerce-Admin
-img: /assets/ecommerce-admin.png
+img: /assets/work/ecommerce-admin.png
 img_alt: Ecommerce Admin Dashboard preview
 tags:
   - Next.js
