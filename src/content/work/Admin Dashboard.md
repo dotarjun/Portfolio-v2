@@ -1,8 +1,8 @@
 ---
 title: Ecommerce Admin Dashboard
-description: Full-featured admin dashboard for managing an ecommerce site
+description: Full featured Admin Dashboard for managing an ecommerce site
 publishDate: 2023-07-25
-url: https://ecommerce-admin.vercel.app
+url: https://dashboard.guitargear.shop/
 repo: https://github.com/dotarjun/Ecommerce-Admin
 img: /assets/ecommerce-admin-preview.png
 img_alt: Ecommerce Admin Dashboard preview
@@ -35,16 +35,19 @@ The intuitive admin UI is powered by **[Shadcn UI](https://shadcn.com/ui)**, a R
 
 **[Stripe](https://stripe.com/)** handles all payments, subscriptions and billing. It powers a seamless checkout experience.
 
-Together, these modern web technologies enable building a customizable, full-featured admin dashboard for ecommerce businesses of any size. The project takes advantage of the strengths of each technology for a fast, scalable, and enjoyable developer experience.
+Together, these modern web technologies enable building a customizable, full-featured admin dashboard for ecommerce businesses of any size. 
+
+The project takes advantage of the strengths of each technology for a fast, scalable, and enjoyable developer experience.
 
 ### Key Features
 
-- Full CRUD for categories, products, filters, billboards
-- Vendor store management
-- Upload and manage product images
-- Featured product control
-- Search with pagination
-- User authentication via Clerk
-- Order and sales management
-- Revenue graphs and reporting
-- Stripe checkout and webhooks
+- **Robust Admin Controls** - The admin dashboard offers full CRUD functionality to manage categories, products, filters, billboards, and more.
+- **Dark Mode** - Switch to dark mode for an eye-friendly alternative to the default light theme.
+- **Vendor Portal** - Vendors have a dedicated portal to easily upload products, manage inventory, track sales and payouts.
+- **Image Uploads** - Seamlessly upload high-quality product images to showcase gears.
+- **Featured Products** - Admins can control and customize featured/promoted products.
+- **Search and Filters** - Finding gears is easy with search including pagination and advanced filters.
+- **User Authentication** - Clerk handles secure user authentication and account management.
+- **Order Management** - Admins have full visibility into orders, fulfillment, and customer communication.
+- **Revenue Analytics** - Actionable analytics provide insights into sales, traffic, conversions and revenue growth.
+- **Stripe Integration** - Stripe powers a smooth, robust checkout experience and handles subscriptions.
