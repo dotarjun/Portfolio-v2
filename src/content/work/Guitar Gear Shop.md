@@ -35,3 +35,9 @@ Together, these technologies provide a fast, intuitive, and scalable platform fo
 
 ### Key Features
 
+- **Cart Functionality** - Add products to cart
+- **Responsive** - Mobile-first design
+- **Admin Dashboard CMS** - Full featured admin dashboard for easily managing products, categories, and more
+- **Search and Filters** - Finding gears is easy with search including pagination and advanced filters
+- **Order Management** - Full visibility into orders, fulfillment, and customer communication
+- **Stripe Integration** - Stripe powers a smooth, robust checkout experience and handles subscriptions
