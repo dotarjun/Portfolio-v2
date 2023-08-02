@@ -6,136 +6,133 @@ import Hero from "../components/Hero.astro";
 ---
 
 <BaseLayout
-	title="About | Arjun Singh"
-	description="Learn more about who Arjun Singh is">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background.">
-				<img
-					width="1553"
-					height="873"
-					src="/assets/guitar.webp"
-					alt="Arjun Singh's Guitar with Album Art in the Background"
-				/>
-			</Hero>
+  title="About | Arjun Singh"
+  description="Learn more about who Arjun Singh is">
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="About"
+        tagline="Thanks for stopping by. Read below to learn more about myself and my background.">
+        <img
+          width="1553"
+          height="873"
+          src="/assets/guitar.webp"
+          alt="Arjun Singh's Guitar with Album Art in the Background"
+        />
+      </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						From a young age, I was captivated by the world of
-						computers and technology. This fascination led me down a
-						path of exploration and discovery, fueling my desire to
-						understand and create within the digital realm. I have
-						honed my skills in various areas of computer science,
-						from <mark>Web Development</mark> to
-						<mark>UI/UX Design</mark>, and I am always eager to take
-						on new challenges and expand my knowledge.
-					</p>
-					<br />
-					<p>
-						As an avid writer, I share my thoughts and insights
-						through regular
-						<a
-							href="http://blog.arjunsingh.tech/"
-							target="_blank"
-							rel="noopener noreferrer">
-							<strong>Blog posts</strong>
-						</a>
-						, which I publish every Monday and Friday. Writing allows
-						me to articulate my ideas and communicate with others, fostering
-						meaningful discussions and connections within the tech community
-						and beyond.
-					</p>
-					<br />
-					<p>
-						When I'm not busy coding, you can often find me
-						strumming my guitar, immersing myself in the raw energy
-						of rock and roll and heavy metal. Music has always been
-						a source of inspiration for me, providing an outlet for
-						creativity and self-expression. Playing the guitar
-						allows me to unleash my inner artist and find balance
-						amidst the fast-paced world of technology.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>
-						I have done my bachelor's in
-						<mark>Computer Science</mark> from the Delhi University.
-						I learnt a lot about the fundamentals of computer science
-						and programming during my time there.
-					</p>
-				</div>
-			</section>
-		</main>
+      <section>
+        <h2 class="section-title">Background</h2>
+        <div class="content">
+          <p>
+            From a young age, I was captivated by the world of computers and
+            technology. This fascination led me down a path of exploration and
+            discovery, fueling my desire to understand and create within the
+            digital realm. I have honed my skills in various areas of computer
+            science, from <mark>Web Development</mark> to
+            <mark>UI/UX Design</mark>, and I am always eager to take on new
+            challenges and expand my knowledge.
+          </p>
+          <br />
+          <p>
+            As an avid writer, I share my thoughts and insights through regular
+            <a
+              href="http://blog.arjunsingh.tech/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-[var(--link-color)]">
+              <strong>Blog posts</strong>
+            </a>
+            , which I publish every Monday and Friday. Writing allows me to articulate
+            my ideas and communicate with others, fostering meaningful discussions
+            and connections within the tech community and beyond.
+          </p>
+          <br />
+          <p>
+            When I'm not busy coding, you can often find me strumming my guitar,
+            immersing myself in the raw energy of rock and roll and heavy metal.
+            Music has always been a source of inspiration for me, providing an
+            outlet for creativity and self-expression. Playing the guitar allows
+            me to unleash my inner artist and find balance amidst the fast-paced
+            world of technology.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Education</h2>
+        <div class="content">
+          <p>
+            I have done my bachelor's in
+            <mark>Computer Science</mark> from the Delhi University. I learnt a lot
+            about the fundamentals of computer science and programming during my
+            time there.
+          </p>
+        </div>
+      </section>
+    </main>
 
-		<ContactCTA />
-	</div>
+    <ContactCTA />
+  </div>
 </BaseLayout>
 
 <style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
-	mark {
-		background-color: rgba(var(--link-color), 0.5);
-		color: var(--gray-0);
-	}
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
+  mark {
+    background-color: rgba(var(--link-color), 1);
+    color: var(--gray-0);
+  }
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+  .content {
+    grid-column: 2 / 4;
+  }
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
 </style>
