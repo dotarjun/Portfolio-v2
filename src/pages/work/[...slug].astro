@@ -9,6 +9,8 @@ import Icon from "../../components/Icon.astro";
 import Pill from "../../components/Pill.astro";
 import ProjectCTA from "../../components/ProjectCTA.astro";
 
+import "../../styles/slug.css";
+
 interface Props {
   entry: CollectionEntry<"work">;
 }
@@ -54,8 +56,10 @@ const { Content } = await entry.render();
           <div>
             <ProjectCTA url={entry.data.url} repo={entry.data.repo} />
           </div>
-          <div class="content">
-            <Content />
+          <div class="content mx-auto max-w-[65ch]">
+            <div class="slug-content">
+              <Content />
+            </div>
           </div>
         </div>
       </main>
