@@ -37,9 +37,7 @@ const { variant } = Astro.props;
 
 	@media (min-width: 50em) {
 		.grid {
-			grid-auto-columns: 1fr;
-			/* q: WHat does this do? */
-			grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+			grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
 			grid-template-rows: repeat(auto-fill, minmax(18rem, 1fr));
 			gap: 4rem;
 		}
