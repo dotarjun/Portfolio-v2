@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slug-content > h2 {
+  @apply text-4xl;
+}
+
+.slug-content > h3 {
+  @apply text-3xl;
+}
+
+.slug-content > ul {
+  @apply list-disc pl-8;
+}
+
+.slug-content > p {
+  @apply mt-4;
+}
+
+.slug-content a {
+  @apply text-[var(--link-color)];
+}
