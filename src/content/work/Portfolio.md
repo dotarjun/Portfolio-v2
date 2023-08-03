@@ -15,18 +15,28 @@ tags:
 
 ## Tech Stack
 
-- **Astro.js**
-- **Tailwind CSS**
-- **React**
-- **Figma**
-- **Vercel**
-- **GitHub**
+- <a href="https://astro.build/" target="_blank">Astro.js</a>
+- <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>
+- <a href="https://reactjs.org/" target="_blank">React</a>
+- <a href="https://www.figma.com/" target="_blank">Figma</a>
+- <a href="https://vercel.com/" target="_blank">Vercel</a>
+- <a href="https://github.com/" target="_blank">GitHub</a>
 
 ### Description
 
-The Portfolio project serves as a digital representation of my professional portfolio. It includes a collection of my projects, contact links and other relevant information to provide an overview of my skills and experience.
+The Portfolio project serves as a digital representation of my professional portfolio. It includes a collection of my projects, contact links, and other relevant information to provide an overview of my skills and experience.
 
-The website is built using **[Astro.js](https://astro.build)**, a static site generator that allows for the use of React components and JSX syntax. The website is styled using **[Tailwind CSS](https://tailwindcss.com/)**, a utility-first CSS framework. The website is hosted on **[Vercel](https://vercel.com/)** and the source code is available on **[GitHub](https://github.com/dotarjun/portfolio-v2)**. The website was designed using **[Figma](https://www.figma.com/)**, a cloud-based design and prototyping tool.
+The website is built using **Astro.js**, a static site generator that allows for the use of React components and JSX syntax. This combination of technologies enables a dynamic and interactive user experience while ensuring optimal performance and fast-loading pages.
+
+To achieve a sleek and responsive design, the website is styled using **Tailwind CSS**, a utility-first CSS framework. Tailwind CSS's extensive set of utility classes allows for a highly customized and visually appealing layout.
+
+For hosting, the website is deployed on **Vercel**, a popular platform known for its ease of use, scalability, and high-performance deployment infrastructure. This ensures that the website is accessible to visitors worldwide and can handle varying levels of traffic with ease.
+
+The source code for the Portfolio project is available on **GitHub**, making it open-source and allowing other developers to view, contribute, and provide feedback on the codebase. This fosters collaboration and continuous improvement of the project.
+
+To craft the website's design and user interface, **Figma**, a cloud-based design and prototyping tool, was utilized. Figma offers a collaborative environment for designers and developers to work together, creating a visually stunning and user-friendly website.
+
+Overall, the Portfolio project showcases a combination of cutting-edge technologies and design tools to present my skills and achievements in an impressive and accessible manner, demonstrating my commitment to innovation and professional excellence.
 
 ### Features
 
