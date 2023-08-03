@@ -3,21 +3,48 @@
 @tailwind utilities;
 
 .slug-content > h2 {
-  @apply text-4xl;
+  @apply text-4xl lg:text-6xl;
 }
 
 .slug-content > h3 {
-  @apply text-3xl;
+  @apply text-3xl lg:text-4xl;
 }
 
 .slug-content > ul {
-  @apply list-disc pl-8;
+  @apply pl-6 list-decimal;
+}
+
+.slug-content ul li {
+  @apply my-4 lg:text-lg;
+}
+
+.slug-content strong {
+  @apply text-lg lg:text-xl;
+}
+
+.slug-content ul li {
+  @apply lg:text-lg;
+}
+.slug-content ul li a {
+  @apply font-bold lg:text-lg;
+}
+
+.slug-content ul h4 {
+  @apply text-lg my-1 lg:text-2xl opacity-95;
 }
 
 .slug-content > p {
-  @apply mt-4;
+  @apply mt-4 lg:text-lg;
 }
 
 .slug-content a {
   @apply text-[var(--link-color)];
+}
+
+.slug-content #overview {
+  @apply mt-16;
+}
+
+.slug-content #key-features {
+  @apply mt-16;
 }
