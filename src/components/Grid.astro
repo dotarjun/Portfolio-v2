@@ -17,20 +17,16 @@ const { variant } = Astro.props;
 		gap: 1rem;
 		list-style: none;
 		padding: 0;
-		/* q: make it veritcally and horizontally centered */
 		justify-content: center;
 		align-items: center;
 	}
 
 	.grid.small {
-		/* grid-template-columns: 1fr 1fr; */
-		/* q: how to make this auto add columns */
 		grid-auto-columns: 1fr;
 		grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
 		gap: 1.5rem;
 	}
 
-	/* If last row contains only one item, make it span both columns. */
 	.grid.small > :global(:last-child:nth-child(odd)) {
 		grid-column: 1 / 3;
 	}
@@ -47,12 +43,10 @@ const { variant } = Astro.props;
 			padding-bottom: var(--row-offset);
 		}
 
-		/* Shift first item in each row vertically to create staggered effect. */
 		.grid.offset > :global(:nth-child(odd)) {
 			transform: translateY(var(--row-offset));
 		}
 
-		/* If last row contains only one item, display it in the second column. */
 		.grid.offset > :global(:last-child:nth-child(odd)) {
 			grid-column: 2 / 3;
 			transform: none;
