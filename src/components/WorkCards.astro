@@ -1,6 +1,8 @@
 ---
 import type { CollectionEntry } from "astro:content";
 
+import Pill from "./Pill.astro";
+
 interface Props {
   project: CollectionEntry<"work">;
 }
@@ -22,6 +24,11 @@ const { data, slug } = Astro.props.project;
     <div class="pt-4">
       <span class="text-2xl">{data.title}</span>
       <p class="font-normal text-sm text-gray-500">{data.description}</p>
+      <div class="pb-2 pt-4">
+        <div class="flex gap-2">
+          {data.tags.map((t) => <Pill className="text-sm px-4 py-2 font-normal">{t}</Pill>)}
+        </div>
+      </div>
     </div>
   </div>
 </a>
