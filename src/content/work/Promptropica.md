@@ -9,24 +9,32 @@ img: /assets/work/promptropica-preview.png
 img_alt: Promptropica preview
 tags:
   - Next.js
-  - Auth
+  - Next Auth
   - MongoDB
 ---
 
 ## Tech Stack
 
-- **Next.js**
-- **Tailwind CSS**
-- **MongoDB**
-- **Mongoose**
-- **Next Auth**
-- **Google OAuth**
+- <a href="https://nextjs.org/" target="_blank">Next.js</a>
+- <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>
+- <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>
+- <a href="https://mongoosejs.com/" target="_blank">Mongoose</a>
+- <a href="https://next-auth.js.org/" target="_blank">Next Auth</a>
+- <a href="https://developers.google.com/identity/protocols/oauth2" target="_blank">Google OAuth</a>
 
 ### Description
 
 Promptropica is a feature-rich Full Stack Application that empowers users to unleash their creativity. It is a powerful AI prompt sharing tool that allows users to **Create, Read, Update, and Delete** AI prompts effortlessly.
 
-Powered by **[Next.js 13.4](https://nextjs.org/)** and equipped with **[Tailwind CSS](https://tailwindcss.com)** for sleek and responsive styling, Promptropica offers a seamless user experience. With **[Next Auth](https://next-auth.js.org/)** handling authentication via _Google_, and **[MongoDB](https://www.mongodb.com/)** and **[Mongoose](https://mongoosejs.com/)** as the robust database solution.
+Powered by **Next.js 13.4**, a popular and efficient React framework, Promptropica benefits from its cutting-edge features and performance optimizations. Next.js enables server-side rendering, static site generation, and client-side routing, ensuring fast and SEO-friendly web applications.
+
+Equipped with **Tailwind CSS**, a utility-first CSS framework, Promptropica ensures sleek and responsive styling. Tailwind CSS's extensive set of pre-built classes streamlines the design process and allows for a highly customizable user interface.
+
+Promptropica leverages **Next Auth**, a flexible authentication library for Next.js applications, to handle user authentication seamlessly. With Next Auth, users can sign in via _Google_ OAuth and enjoy secure access to their accounts and personalized features.
+
+The application's data is efficiently managed using **MongoDB**, a robust and scalable NoSQL database solution. Working in tandem with MongoDB, **Mongoose**, an elegant MongoDB object modeling tool, simplifies data manipulation and validation, ensuring a reliable and structured database architecture.
+
+Together, these powerful technologies form the backbone of Promptropica, providing users with an intuitive, efficient, and enjoyable platform to engage with AI prompts and share their creativity with the world.
 
 ### Features
 
