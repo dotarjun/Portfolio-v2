@@ -5,6 +5,7 @@ import CallToAction from "./CallToAction.astro";
 import Grid from "./Grid.astro";
 import Icon from "./Icon.astro";
 import PortfolioPreview from "./PortfolioPreview.astro";
+import WorkCards from "./WorkCards.astro";
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection("work"))
@@ -27,7 +28,7 @@ const projects = (await getCollection("work"))
             {
                 projects.map((project) => (
                     <li>
-                        <PortfolioPreview project={project} />
+												<WorkCards project={project}  />
                     </li>
                 ))
             }
