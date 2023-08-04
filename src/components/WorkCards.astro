@@ -26,7 +26,11 @@ const { data, slug } = Astro.props.project;
       <p class="font-normal text-sm text-gray-500">{data.description}</p>
       <div class="pb-2 pt-4">
         <div class="flex gap-2">
-          {data.tags.map((t) => <Pill className="text-sm px-4 py-2 font-normal">{t}</Pill>)}
+          {
+            data.tags.map((t) => (
+              <Pill className="text-sm px-4 py-2 font-normal">{t}</Pill>
+            ))
+          }
         </div>
       </div>
     </div>
