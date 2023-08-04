@@ -23,7 +23,9 @@ const { data, slug } = Astro.props.project;
     </div>
     <div class="pt-4">
       <span class="text-2xl">{data.title}</span>
-      <p class="font-normal text-sm text-gray-500">{data.description}</p>
+      <p class="font-normal text-sm lg:text-lg text-gray-500">
+        {data.description}
+      </p>
       <div class="pb-2 pt-4">
         <div class="flex gap-2">
           {
