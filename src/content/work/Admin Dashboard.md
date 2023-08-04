@@ -8,34 +8,34 @@ img: /assets/work/ecommerce-admin.png
 img_alt: Ecommerce Admin Dashboard preview
 tags:
   - Next.js
-  - PlanetScale
+  - PlanetScale MySQL
   - TypeScript
 ---
 
 ## Tech Stack
 
-- **Next.js**
-- **TypeScript**
-- **Tailwind CSS**
-- **Prisma**
-- **MySQL**
-- **PlanetScale**
-- **Shadcn UI**
-- **Stripe**
+<a href="https://nextjs.org/" target="_blank">Next.js</a>
+<a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>
+<a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>
+<a href="https://prisma.io/" target="_blank">Prisma</a>
+<a href="https://www.mysql.com/" target="_blank">MySQL</a>
+<a href="https://planetscale.com/" target="_blank">PlanetScale</a>
+<a href="https://shadcn.com/ui" target="_blank">Shadcn UI</a>
+<a href="https://stripe.com" target="_blank">Stripe</a>
 
 ### Overview
 
-The Ecommerce Admin Dashboard is built using **[Next.js](https://nextjs.org/)**, a React framework that enables server-side rendering and static site generation. It is typed with **[TypeScript](https://www.typescriptlang.org/)** for static type checking.
+The Ecommerce Admin Dashboard is built using **Next.js**, a React framework that enables server-side rendering and static site generation. It is typed with **TypeScript** for static type checking.
 
-For styling, **[Tailwind CSS](https://tailwindcss.com/)** is used - a utility-first CSS framework that makes building custom designs fast and easy.
+For styling, **Tailwind CSS** is used - a utility-first CSS framework that makes building custom designs fast and easy.
 
-The dashboard leverages **[Prisma](https://www.prisma.io/)** as the application ORM for the **[MySQL](https://www.mysql.com/)** database hosted on **[PlanetScale](https://planetscale.com/)**. This provides a scalable, fully managed database solution.
+The dashboard leverages **Prisma** as the application ORM for the **MySQL** database hosted on **PlanetScale**. This provides a scalable, fully managed database solution.
 
-The intuitive admin UI is powered by **[Shadcn UI](https://shadcn.com/ui)**, a React component library designed for building dashboards. It provides responsive, customizable layouts and components out of the box.
+The intuitive admin UI is powered by **Shadcn UI**, a React component library designed for building dashboards. It provides responsive, customizable layouts and components out of the box.
 
-**[Stripe](https://stripe.com/)** handles all payments, subscriptions and billing. It powers a seamless checkout experience.
+**Stripe** handles all payments, subscriptions, and billing. It powers a seamless checkout experience.
 
-Together, these modern web technologies enable building a customizable, full-featured admin dashboard for ecommerce businesses of any size. 
+Together, these modern web technologies enable building a customizable, full-featured admin dashboard for ecommerce businesses of any size.
 
 The project takes advantage of the strengths of each technology for a fast, scalable, and enjoyable developer experience.
 
