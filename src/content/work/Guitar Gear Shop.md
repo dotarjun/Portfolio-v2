@@ -9,7 +9,7 @@ img_alt: Guitar Gear Shop preview
 tags:
   - Next.js
   - TypeScript
-  - Tailwind CSS
+  - Tailwind
 ---
 
 ### Tech Stack
