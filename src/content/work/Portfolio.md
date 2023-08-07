@@ -8,8 +8,8 @@ repo: https://github.com/dotarjun/Portfolio-v2/
 img: /assets/work/portfolio.png
 img_alt: Portfolio preview
 tags:
-  - Astro JS
-  - Tailwind CSS
+  - Astro
+  - Tailwind
   - React
 ---
 

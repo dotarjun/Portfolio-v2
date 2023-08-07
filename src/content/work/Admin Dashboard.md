@@ -8,7 +8,7 @@ img: /assets/work/ecommerce-admin.png
 img_alt: Ecommerce Admin Dashboard preview
 tags:
   - Next.js
-  - PlanetScale MySQL
+  - MySQL
   - TypeScript
 ---
 
