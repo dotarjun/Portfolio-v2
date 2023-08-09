@@ -1,5 +1,5 @@
 ---
-title: Ecommerce Admin Dashboard
+title: Admin Dashboard
 description: Full featured Admin Dashboard for managing an ecommerce site
 publishDate: 2023-07-25
 url: https://dashboard.guitargear.shop/
