@@ -6,42 +6,42 @@ const entry = Astro.props;
 ---
 
 <aside>
-    <CallToAction href={entry.url}>
-        Live
-        <Icon icon="globe" size="1.2em" />
-    </CallToAction>
-    <CallToAction href={entry.repo}>
-        Repo
-        <Icon icon="github-logo" size="1.2em" />
-    </CallToAction>
+  <CallToAction href={entry.url}>
+    Live
+    <Icon icon="globe" size="1.2em" />
+  </CallToAction>
+  <CallToAction href={entry.repo}>
+    Repo
+    <Icon icon="github-logo" size="1.2em" />
+  </CallToAction>
 </aside>
 
 <style>
+  aside {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: var(--gray-999_40);
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    text-align: center;
+    max-width: 15ch;
+  }
+
+  @media (min-width: 50em) {
     aside {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-around;
-        border-radius: 5px;
-        background-color: var(--gray-999_40);
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
 
     h2 {
-        font-size: var(--text-xl);
-        text-align: center;
-        max-width: 15ch;
+      font-size: var(--text-3xl);
+      text-align: left;
     }
-
-    @media (min-width: 50em) {
-        aside {
-            flex-direction: row-reverse;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        h2 {
-            font-size: var(--text-3xl);
-            text-align: left;
-        }
-    }
+  }
 </style>
