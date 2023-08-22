@@ -10,14 +10,15 @@ const { align = "center", title } = Astro.props;
 <header class:list={["hero stack gap-4", align]}>
   <div
     class="prose mt-20 flex flex-col items-start space-y-5 md:mt-32 md:space-y-7 md:px-5 lg:mt-32">
-    <h1 class="py-0 my-0">{title}</h1>
-    <p class="font-normal my-0">
+    <h1 class="py-0 my-0 text-black">{title}</h1>
+    <p class="font-normal my-0 text-gray-900">
       I create
-      <span class="font-semibold">polished, profitable and performant</span> digital
-      products that
-      <span class="font-semibold">deliver robust ROI</span> for founders, business
-      owners, startups, and ambitious individuals seeking to
-      <span class="font-semibold">boost their online presence</span>.
+      <span class="font-semibold text-black"
+        >polished, profitable and performant</span
+      > digital products that
+      <span class="font-semibold text-black">deliver robust ROI</span> for founders,
+      business owners, startups, and ambitious individuals seeking to
+      <span class="font-semibold text-black">boost their online presence</span>.
     </p>
   </div>
   <slot />
