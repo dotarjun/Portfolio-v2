@@ -1,21 +1,20 @@
 ---
-import { getCollection } from "astro:content";
-
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
+  import { Image } from "astro:assets";
+
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 // Component Imports
 import CallToAction from "../components/CallToAction.astro";
-import Grid from "../components/Grid.astro";
 import Hero from "../components/Hero.astro";
 import Icon from "../components/Icon.astro";
-import Pill from "../components/Pill.astro";
-import PortfolioPreview from "../components/PortfolioPreview.astro";
 
 // Page section components
 import ContactCTA from "../components/ContactCTA.astro";
-import Skills from "../components/Skills.astro";
 import Experience from "../components/Experience.astro";
+import Skills from "../components/Skills.astro";
+
+import hero from "../assets/heroPicture.png";
 ---
 
 <BaseLayout>
@@ -45,11 +44,12 @@ import Experience from "../components/Experience.astro";
           </CallToAction>
         </Hero>
 
-        <img
-          alt="Arjun Singh's Avatar holding a laptop"
+        <Image
+          alt="Arjun Singh's Avatar"
           width="480"
           height="620"
-          src="/assets/heroPicture.png"
+          src={hero}
+          format="webp"
         />
         <!-- TODO: Get a Professional looking picture clicked -->
       </header>
