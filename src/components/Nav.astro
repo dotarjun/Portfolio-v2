@@ -1,6 +1,10 @@
 ---
-import Icon, { Props as IconProps } from "./Icon.astro";
+import { Image } from "astro:assets";
+
+import Icon, { type Props as IconProps } from "./Icon.astro";
 import ThemeToggle from "./ThemeToggle.astro";
+
+import hero from "../assets/heroPicture.png";
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
@@ -28,24 +32,25 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/arjun-singh-a1a706189/",
+    href: "https://www.linkedin.com/in/dotarjun/",
     icon: "linkedin-logo",
   },
 ];
 ---
 
 <nav>
-  <div class="menu-header">
+  <div class="menu-header flex items-center">
     <a href="/" class="site-title">
-      <Icon
-        icon="terminal-window"
-        color="var(--accent-regular)"
-        size="1.6em"
-        gradient
+      <Image
+        alt="Arjun Singh's Avatar"
+        width="100"
+        height="100"
+        src={hero}
+        format="webp"
+        class="-scale-x-100"
       />
-      Arjun Singh
     </a>
-    <menu-button>
+    <menu-button class="mt-0 p-3">
       <template>
         <button class="menu-button" aria-expanded="false">
           <span class="sr-only">Menu</span>
@@ -136,14 +141,14 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
     position: relative;
     font-family: var(--font-brand);
     font-weight: 500;
-    margin-bottom: 3.5rem;
+    /* margin-bottom: 3.5rem; */
   }
 
   .menu-header {
     display: flex;
     justify-content: space-between;
     gap: 0.5rem;
-    padding: 1.5rem;
+    /* padding-block: 1.5rem; */
   }
 
   .site-title {
@@ -161,16 +166,16 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
     border: 0;
     border-radius: 999rem;
     padding: 0.5rem;
-    font-size: 1.5rem;
-    color: var(--gray-300);
-    background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
-    box-shadow: var(--shadow-md);
+    font-size: 3rem;
+    /* color: var(--gray-300); */
+    /* background: radial-gradient(var(--gray-900), var(--gray-800) 150%); */
+    /* box-shadow: var(--shadow-md); */
   }
 
   .menu-button[aria-expanded="true"] {
-    color: var(--gray-0);
-    background: linear-gradient(180deg, var(--gray-600), transparent),
-      radial-gradient(var(--gray-900), var(--gray-800) 150%);
+    /* color: var(--gray-0); */
+    /* background: linear-gradient(180deg, var(--gray-600), transparent), */
+    /* radial-gradient(var(--gray-900), var(--gray-800) 150%); */
   }
 
   .menu-button[hidden] {
@@ -181,7 +186,7 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
     position: absolute;
     inset: -1px;
     content: "";
-    background: var(--gradient-stroke);
+    /* background: var(--gradient-stroke); */
     border-radius: 999rem;
     z-index: -1;
   }

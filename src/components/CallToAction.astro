@@ -6,7 +6,11 @@ interface Props {
 const { href } = Astro.props;
 ---
 
-<a href={href} target="_blank" rel="noopener noreferrer" class="text-neutral-50"
+<a
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="text-neutral-50 scale-100 hover:scale-105 duration-300 ease-in-out"
   ><slot /></a
 >
 
@@ -23,7 +27,8 @@ const { href } = Astro.props;
     line-height: 1.1;
     border-radius: 999rem;
     overflow: hidden;
-    background: var(--gradient-accent-orange);
+    /* background: var(--gradient-accent-orange); */
+    background-color: #20e6cf;
     box-shadow: var(--shadow-md);
     white-space: nowrap;
   }

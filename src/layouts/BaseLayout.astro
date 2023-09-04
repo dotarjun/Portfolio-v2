@@ -19,8 +19,8 @@ const { title, description } = Astro.props;
   <head>
     <MainHead title={title} description={description} />
   </head>
-  <body>
-    <div class="stack backgrounds">
+  <body class="prose tracking-[0.4px] font-medium my-0 text-gray-500 leading-6">
+    <div class="stack">
       <Nav />
       <slot />
       <Footer />
@@ -57,7 +57,7 @@ const { title, description } = Astro.props;
       }
 
       /* These backgrounds are displayed below the fold, so we lazy load them
-			   once the `.loaded` class has been set.  */
+      once the `.loaded` class has been set.  */
       :root.loaded {
         --bg-image-subtle-1: url("/assets/backgrounds/bg-subtle-1-light-800w.jpg");
         --bg-image-subtle-2: url("/assets/backgrounds/bg-subtle-2-light-800w.jpg");
@@ -94,7 +94,7 @@ const { title, description } = Astro.props;
         min-height: 100%;
         isolation: isolate;
         background:
-					/*noise*/ url("/assets/backgrounds/noise.png") top
+        /*noise*/ url("/assets/backgrounds/noise.png") top
             center/220px repeat,
           /*footer*/ var(--bg-image-footer) bottom
             center/var(--bg-gradient-size) no-repeat,
