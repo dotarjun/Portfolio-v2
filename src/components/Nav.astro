@@ -47,7 +47,7 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
         height="100"
         src={hero}
         format="webp"
-        class="-scale-x-100"
+        class="-scale-x-100 my-0 p-2"
       />
     </a>
     <menu-button class="mt-0 p-3">
@@ -165,7 +165,7 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
     display: flex;
     border: 0;
     border-radius: 999rem;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     font-size: 3rem;
     /* color: var(--gray-300); */
     /* background: radial-gradient(var(--gray-900), var(--gray-800) 150%); */
@@ -303,7 +303,8 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
     .link {
       padding: 0.5rem 1rem;
       border-radius: 999rem;
-      transition: color var(--theme-transition),
+      transition:
+        color var(--theme-transition),
         background-color var(--theme-transition);
     }
 
