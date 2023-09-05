@@ -1,3 +1,7 @@
+.no-tailwind {
+  all: unset;
+}
+
 /* Global variables */
 :root {
   /* Colors */
