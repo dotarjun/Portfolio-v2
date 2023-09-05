@@ -1,39 +1,12 @@
 ---
 interface Props {
   title: string;
-  tagline?: string;
 }
 
-const { title, tagline } = Astro.props;
+const { title } = Astro.props;
 ---
 
-<div class="stack gap-8">
-  <div
-    class="prose mt-10 flex flex-col items-center space-y-5 md:mt-32 md:space-y-7 md:px-5 lg:mt-32">
-    <h1 class="py-0 my-0 text-black text-left w-full">{title}</h1>
-    {
-      tagline ? (
-        <p class="tracking-[0.4px] font-medium my-0 text-gray-500 leading-6">
-          {tagline}
-        </p>
-      ) : (
-        <p class="tracking-[0.4px] font-medium my-0 text-gray-500 leading-6">
-          I create{" "}
-          <span class="font-semibold text-black">
-            polished, profitable and performant
-          </span>{" "}
-          websites that{" "}
-          <span class="font-semibold text-black">deliver robust ROI</span> for{" "}
-          <span class="font-semibold">
-            busines owners, startups, and ambitious individuals
-          </span>{" "}
-          seeking to{" "}
-          <span class="font-semibold text-black">
-            boost their online presence.
-          </span>
-        </p>
-      )
-    }
-  </div>
+<h1 class="py-0 my-0 text-black text-left w-full">{title}</h1>
+<p class="tracking-[0.4px] font-medium my-0 text-gray-500 leading-6">
   <slot />
-</div>
+</p>
