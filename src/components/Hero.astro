@@ -2,13 +2,12 @@
 interface Props {
   title: string;
   tagline?: string;
-  align?: "start" | "center";
 }
 
-const { align = "center", title, tagline } = Astro.props;
+const { title, tagline } = Astro.props;
 ---
 
-<div class:list={["hero stack gap-4", align]} class="gap-8">
+<div class="stack gap-8">
   <div
     class="prose mt-10 flex flex-col items-center space-y-5 md:mt-32 md:space-y-7 md:px-5 lg:mt-32">
     <h1 class="py-0 my-0 text-black text-left w-full">{title}</h1>
