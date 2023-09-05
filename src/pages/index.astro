@@ -18,9 +18,31 @@ import HireMe from "../components/HireMe.astro";
   <div class="stack gap-20 lg:gap-48">
     <div class="wrapper stack gap-8 lg:gap-20">
       <header class="hero">
-        <Hero title="Hi, I'm Arjun">
+        <div class="stack gap-8">
+          <div
+            class="prose mt-10 flex flex-col items-center space-y-5 md:mt-32 md:space-y-7 md:px-5 lg:mt-32">
+            <Hero title="Hi, I'm Arjun">
+              <p
+                class="tracking-[0.4px] font-medium my-0 text-gray-500 leading-6">
+                I create{" "}
+                <span class="font-semibold text-black">
+                  polished, profitable and performant
+                </span>{" "}
+                 websites that{" "}
+                <span class="font-semibold text-black">deliver robust ROI</span>
+                 for{" "}
+                <span class="font-semibold">
+                  busines owners, startups, and ambitious individuals
+                </span>{" "}
+                 seeking to{" "}
+                <span class="font-semibold text-black"
+                  >boost their online presence.</span
+                >
+              </p>
+            </Hero>
+          </div>
           <HireMe />
-        </Hero>
+        </div>
 
         <!-- TODO: Get a Professional looking picture clicked -->
       </header>
@@ -112,7 +134,8 @@ import HireMe from "../components/HireMe.astro";
     aspect-ratio: calc(2.25 / var(--bg-scale));
     top: 0;
     transform: translateY(-75%) translateX(-50%);
-    background: url("/assets/backgrounds/noise.png") top center/220px repeat,
+    background:
+      url("/assets/backgrounds/noise.png") top center/220px repeat,
       var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
       var(--gray-999);
     background-blend-mode: overlay, normal, normal, normal;
