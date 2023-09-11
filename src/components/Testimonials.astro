@@ -7,5 +7,21 @@
   <script
     async
     type="text/javascript"
-    src="https://static.senja.io/dist/platform.js"></script>
+    src="https://static.senja.io/dist/platform.js"
+  >
+    // Find the div element with class "senja-embed"
+    const senjaEmbed = document.querySelector(".senja-embed");
+    console.log(senjaEmbed);
+    console.log("senjaEmbed");
+
+    if (senjaEmbed) {
+      // Find the next sibling div element
+      const nextDiv = senjaEmbed.nextElementSibling;
+      console.log(senjaEmbed);
+      if (nextDiv) {
+        // Remove the next sibling div element
+        nextDiv.remove();
+      }
+    }
+  </script>
 </div>
