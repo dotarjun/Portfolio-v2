@@ -10,69 +10,67 @@ import Hero from "../components/Hero.astro";
   description="Learn more about who Arjun Singh is">
   <div class="stack gap-20">
     <main class="wrapper about">
-      <Hero
+      <main
         title="About"
-        tagline="Thanks for stopping by. Read below to learn more about myself and my background.">
         <img
-          width="1553"
-          height="873"
-          src="/assets/guitar.webp"
-          alt="Arjun Singh's Guitar with Album Art in the Background"
-        />
-      </Hero>
-
-      <section>
-        <h2 class="section-title">Background</h2>
-        <div class="content">
-          <p>
-            From a young age, I was captivated by the world of computers and
-            technology. This fascination led me down a path of exploration and
-            discovery, fueling my desire to understand and create within the
-            digital realm. I have honed my skills in various areas of computer
-            science, from <mark>Web Development</mark> to
-            <mark>UI/UX Design</mark>, and I am always eager to take on new
-            challenges and expand my knowledge.
-          </p>
-          <br />
-          <p>
-            As an avid writer, I share my thoughts and insights through regular
-            <a
-              href="http://blog.arjunsingh.tech/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-[var(--link-color)]">
-              <strong>Blog posts</strong>
-            </a>
-            , which I publish every Monday and Friday. Writing allows me to articulate
-            my ideas and communicate with others, fostering meaningful discussions
-            and connections within the tech community and beyond.
-          </p>
-          <br />
-          <p>
-            When I'm not busy coding, you can often find me strumming my guitar,
-            immersing myself in the raw energy of rock and roll and heavy metal.
-            Music has always been a source of inspiration for me, providing an
-            outlet for creativity and self-expression. Playing the guitar allows
-            me to unleash my inner artist and find balance amidst the fast-paced
-            world of technology.
-          </p>
-        </div>
-      </section>
-      <section>
-        <h2 class="section-title">Education</h2>
-        <div class="content">
-          <p>
-            I have done my bachelor's in
-            <mark>Computer Science</mark> from the Delhi University. I learnt a lot
-            about the fundamentals of computer science and programming during my
-            time there.
-          </p>
-        </div>
-      </section>
+        width="1553"
+        height="873"
+        src="/assets/guitar.webp"
+        alt="Arjun Singh's Guitar with Album Art in the Background"
+      />
     </main>
 
-    <ContactCTA />
+    <section>
+      <h2 class="section-title">Background</h2>
+      <div class="content">
+        <p>
+          From a young age, I was captivated by the world of computers and
+          technology. This fascination led me down a path of exploration and
+          discovery, fueling my desire to understand and create within the
+          digital realm. I have honed my skills in various areas of computer
+          science, from <mark>Web Development</mark> to
+          <mark>UI/UX Design</mark>, and I am always eager to take on new
+          challenges and expand my knowledge.
+        </p>
+        <br />
+        <p>
+          As an avid writer, I share my thoughts and insights through regular
+          <a
+            href="http://blog.arjunsingh.tech/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-[var(--link-color)]">
+            <strong>Blog posts</strong>
+          </a>
+           , which I publish every Monday and Friday. Writing allows me to
+          articulate my ideas and communicate with others, fostering meaningful
+          discussions and connections within the tech community and beyond.
+        </p>
+        <br />
+        <p>
+          When I'm not busy coding, you can often find me strumming my guitar,
+          immersing myself in the raw energy of rock and roll and heavy metal.
+          Music has always been a source of inspiration for me, providing an
+          outlet for creativity and self-expression. Playing the guitar allows
+          me to unleash my inner artist and find balance amidst the fast-paced
+          world of technology.
+        </p>
+      </div>
+    </section>
+    <section>
+      <h2 class="section-title">Education</h2>
+      <div class="content">
+        <p>
+          I have done my bachelor's in
+          <mark>Computer Science</mark> from the Delhi University. I learnt a
+          lot about the fundamentals of computer science and programming during
+          my time there.
+        </p>
+      </div>
+    </section>
   </div>
+
+  <ContactCTA />
 </BaseLayout>
 
 <style>
